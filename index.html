@@ -4,111 +4,367 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elisa CUEILLE | Academic Webpage</title>
+  <meta name="description" content="PhD Student in Computer Science at Université Toulouse Capitole / IRIT (SMAC). Multi-agent systems, mobility modeling and simulation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">Elisa CUEILLE</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="CV.pdf" target="_blank" class="nav-cv-btn">CV (PDF)</a></li>
-      </ul>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="CV.pdf" target="_blank" class="nav-cv-btn">CV (PDF)</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <div class="container">
+  <main class="container">
     
-    <!-- Hero / About Section -->
-    <header id="about" class="hero-section">
-      <div class="hero-content">
-        <h1>Elisa CUEILLE</h1>
-        <p class="subtitle">PhD Candidate in Computer Science</p>
-        <p class="affiliation">
-          <a href="https://www.irit.fr/" target="_blank" rel="noopener">IRIT</a> (Institut de Recherche en Informatique de Toulouse) &bull; Team <a href="https://www.irit.fr/departement/systemes-sociotechniques/smac/" target="_blank" rel="noopener">SMAC</a><br>
-          <a href="https://www.ut-capitole.fr/" target="_blank" rel="noopener">Université Toulouse Capitole</a>, Toulouse, France
-        </p>
-        <div class="contact-links">
-          <a href="mailto:elisa.cueille@irit.fr" class="chip-link">📧 elisa.cueille@irit.fr</a>
-          <a href="https://github.com/S-V-R-S" target="_blank" rel="noopener" class="chip-link">💻 GitHub</a>
-          <a href="CV.pdf" target="_blank" class="chip-link primary">📄 Download CV</a>
-        </div>
-      </div>
-    </header>
+    <!-- Hero Header -->
+    <section id="about" class="hero-section">
+      <div class="hero-badge">PhD Candidate in Computer Science</div>
+      <h1>Elisa CUEILLE</h1>
+      <p class="affiliation">
+        <strong>IRIT</strong> (Institut de Recherche en Informatique de Toulouse) &bull; Team <strong>SMAC</strong><br>
+        <strong>Université Toulouse Capitole</strong>, Toulouse, France
+      </p>
 
-    <!-- Bio / Overview -->
-    <section class="card">
-      <h2>About Me</h2>
-      <p>
-        I am a PhD candidate in Computer Science at <strong>Université Toulouse Capitole</strong>, conducting research within the <strong>SMAC</strong> (Systèmes Multi-Agents Coopératifs) team at <strong>IRIT</strong>.
-      </p>
-      <p>
-        My doctoral research is supervised by <strong>Benoît Gaudou</strong>, <strong>Nicolas Verstaevel</strong>, and <strong>Manon Prédhumeau</strong>.
-      </p>
+      <div class="meta-row">
+        <span><strong>Supervisors:</strong> Benoit Gaudou, Nicolas Verstaevel, Manon Prédhumeau</span>
+        <span>&bull;</span>
+        <span><strong>Funding:</strong> Ministerial Doctoral Grant (MESRI)</span>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:elisa.cueille@ut-capitole.fr" class="btn btn-primary">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          elisa.cueille@ut-capitole.fr
+        </a>
+        <a href="https://orcid.org/0009-0005-0757-8846" target="_blank" rel="noopener" class="btn">
+          <span class="orcid-icon">iD</span> ORCID
+        </a>
+        <a href="https://scholar.google.com/citations?user=Elisa+Cueille" target="_blank" rel="noopener" class="btn">
+          🎓 Google Scholar
+        </a>
+        <a href="https://github.com/S-V-R-S" target="_blank" rel="noopener" class="btn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="CV.pdf" target="_blank" class="btn btn-outline">
+          📄 Download CV (PDF)
+        </a>
+      </div>
     </section>
 
     <!-- Research Section -->
     <section id="research" class="card">
-      <h2>Research</h2>
+      <div class="section-header">
+        <h2>Research Overview</h2>
+        <span class="date-badge">2024 &ndash; 2027</span>
+      </div>
+      
+      <div class="thesis-box">
+        <span class="thesis-label">Doctoral Thesis</span>
+        <h3>Agent behavior generation under environmental constraints: application to prospective urban development scenarios</h3>
+      </div>
+
       <p>
-        <strong>Thesis topic:</strong> <em>Generation of agent behaviors under environmental constraints: application to prospective urban development scenarios.</em>
+        Metropolises today face rapid urban densification alongside pressing environmental and societal imperatives. The primary objective of my PhD research is to pioneer a novel simulation framework where individuals' activity chains are no longer merely calibrated or inferred from static historical survey data, but are dynamically generated based on both physical and social opportunities and constraints offered by an evolving environment.
       </p>
       <p>
-        Metropolises today face rapid urban growth and densification, raising critical challenges such as congestion, public transit load, air pollution, and environmental constraints. My work focuses on:
+        Specifically, the research proposes a <strong>multimodal urban mobility model</strong> in which autonomous agents dynamically adapt their decisions, schedules, and transit paths to environmental feedback. This enables rigorous prospective assessment of future urban planning initiatives (such as Low Emission Zones (ZFE), new public transit lines, or infrastructure overhauls) on human behavior and city resilience.
       </p>
-      <ul>
-        <li><strong>Multi-Agent Systems &amp; Agent-Based Modeling (ABM):</strong> Simulating realistic mobility behaviors and activity generation.</li>
-        <li><strong>Synthetic Populations &amp; Activity-Based Models:</strong> Moving beyond purely historical survey data to model prospective planning scenarios and disruptive environmental events.</li>
-        <li><strong>Multimodal Urban Mobility Simulation:</strong> Designing resilient transit algorithms and behavioral adaptation paradigms in urban contexts (e.g., GAMA Platform, MATSim).</li>
-      </ul>
+
+      <div class="grid-2col">
+        <div class="subcard">
+          <h4>Core Methodologies</h4>
+          <ul>
+            <li>Multi-Agent Systems &amp; Agent-Based Modeling (ABM)</li>
+            <li>Activity-Based Modeling (ABM) &amp; Synthetic Populations</li>
+            <li>Discrete Choice &amp; Dynamic Adaptation Rules</li>
+            <li>Multimodal Routing &amp; Transit Simulation</li>
+          </ul>
+        </div>
+        <div class="subcard">
+          <h4>Simulation Tools</h4>
+          <ul>
+            <li><strong>GAMA Platform:</strong> Co-development and urban simulation modeling</li>
+            <li><strong>OpenMole:</strong> Model exploration, calibration, and sensitivity analysis</li>
+            <li><strong>Python &amp; Spatial Data:</strong> GeoPandas, OSMnx, Shapely, NumPy</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Publications & Communications Section -->
+    <!-- Publications Section -->
     <section id="publications" class="card">
-      <h2>Publications &amp; Communications</h2>
-      
-      <h3>Conference Papers &amp; Book Chapters</h3>
-      <ul class="pub-list">
-        <li>
-          <strong>Assessing the Impact of Crisis Cell Decisions During Flash Flood</strong><br>
-          <em>Élisa Cueille, Déborah Bodini, Benoit Gaudou, Delphine Grancher, Pierre-Alexandre Méthot, et al.</em>
-        </li>
-      </ul>
+      <div class="section-header">
+        <h2>Publications &amp; Talks</h2>
+      </div>
 
-      <h3>Presentations &amp; Research Stays</h3>
-      <ul class="pub-list">
-        <li>
-          <strong>Moov'Hanoi Project:</strong> Visiting researcher at ACROSS Laboratory (Hanoi, Vietnam) — Multimodal mobility modeling and simulation.
-        </li>
-        <li>
-          <strong>IRIT-UT Capitole Seminars:</strong> Co-organizer of academic seminars in computer science.
-        </li>
-      </ul>
+      <h3 class="subsection-title">Peer-Reviewed Conference Papers</h3>
+      <div class="pub-item">
+        <span class="pub-tag">Conference Paper</span>
+        <div class="pub-content">
+          <p class="pub-title">Assessing the impact of crisis cell decisions during flash flood</p>
+          <p class="pub-authors"><strong>Élisa Cueille</strong>, Benoit Gaudou, Nicolas Verstaevel, Manon Prédhumeau</p>
+          <p class="pub-venue">The 26th International Workshop on Multi-Agent-Based Simulation (MABS 2025), May 2025.</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Workshops &amp; Academic Seminars</h3>
+      <div class="pub-item">
+        <span class="pub-tag talk-tag">Talk</span>
+        <div class="pub-content">
+          <p class="pub-title">Activity-based model for multimodal urban mobility simulation in Hanoi</p>
+          <p class="pub-venue">Annual Synthetic Populations Workshop, 2025.</p>
+        </div>
+      </div>
+      <div class="pub-item">
+        <span class="pub-tag talk-tag">Talk</span>
+        <div class="pub-content">
+          <p class="pub-title">Activity-based modeling for multimodal urban mobility simulation</p>
+          <p class="pub-venue">Seminar at Toulouse Capitole University, Toulouse, France, 2025.</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Awards &amp; Competitive Grants</h3>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="award-amount">3-Year Funding</div>
+          <div class="award-title">MESRI Doctoral Grant</div>
+          <p class="award-desc">Awarded by competitive examination by the French Ministry of Higher Education and Research.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-amount">&euro;1,586</div>
+          <div class="award-title">DAR Mobility Grant</div>
+          <p class="award-desc">Research Support Department (DAR) of Toulouse Capitole University.</p>
+        </div>
+        <div class="award-card">
+          <div class="award-amount">&euro;900</div>
+          <div class="award-title">EDMITT Mobility Grant</div>
+          <p class="award-desc">Doctoral School of Mathematics, Computer Science, and Telecommunications of Toulouse.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Teaching Section -->
     <section id="teaching" class="card">
-      <h2>Teaching</h2>
-      <p>
-        Teaching assistant (Vacataire / Mission d'enseignement) at <strong>Université Toulouse Capitole</strong>:
-      </p>
-      <ul>
-        <li><strong>Databases &amp; Information Systems:</strong> Practical and lab sessions (L2 Economics / MIASHS).</li>
-        <li><strong>Algorithmique &amp; Programmation:</strong> Labs and practical assignments in programming.</li>
-      </ul>
+      <div class="section-header">
+        <h2>Teaching Experience</h2>
+        <span class="date-badge">2024 &ndash; Present</span>
+      </div>
+      <p class="section-intro">Teaching Assistant (TD) across undergraduate and graduate curricula:</p>
+
+      <div class="teaching-list">
+        <div class="teaching-item">
+          <div class="teaching-meta">
+            <span class="hours">48 hours</span>
+            <span class="level">Master 1 MIAGE</span>
+          </div>
+          <div class="teaching-info">
+            <h4>Entity-Relationship Model &amp; BPMN</h4>
+            <p>Toulouse Capitole University &bull; Relational database design, conceptual modeling, and Business Process Model and Notation.</p>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-meta">
+            <span class="hours">67.5 hours</span>
+            <span class="level">Bachelor 2nd Year</span>
+          </div>
+          <div class="teaching-info">
+            <h4>Python Programming</h4>
+            <p>Toulouse School of Economics (TSE) &bull; Core programming paradigms, data structures, data analysis, and applied economics problem solving.</p>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-meta">
+            <span class="hours">30 hours</span>
+            <span class="level">Bachelor 1st Year</span>
+          </div>
+          <div class="teaching-info">
+            <h4>Algorithms in Python</h4>
+            <p>Toulouse School of Economics (TSE) &bull; Fundamentals of algorithmic logic, algorithmic complexity, and foundational Python implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="card">
+      <div class="section-header">
+        <h2>Education &amp; Academic Honors</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Master MIAGE: Business Process Engineering</h4>
+              <span class="timeline-date">2022 &ndash; 2024</span>
+            </div>
+            <p class="timeline-place">Université Toulouse Capitole</p>
+            <div class="honors-badge-group">
+              <span class="badge-gold">★ Valedictorian M2 (1/44) — Highest Honors (Mention Très Bien)</span>
+              <span class="badge-gold">★ Valedictorian M1 (1/97) — Highest Honors (Mention Très Bien)</span>
+            </div>
+            <p class="timeline-details">Key topics: Advanced Algorithms, IS Conception &amp; Enterprise Architecture, BPMN / UML / UP Modeling, Agile Methodologies, Big Data.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Bachelor Degree (L3) MIASHS &mdash; MIAGE Track</h4>
+              <span class="timeline-date">2021 &ndash; 2022</span>
+            </div>
+            <p class="timeline-place">Université Toulouse Capitole</p>
+            <div class="honors-badge-group">
+              <span class="badge-gold">★ Valedictorian L3 (1/76) — Highest Honors (Mention Très Bien)</span>
+            </div>
+            <p class="timeline-details">Mathematics, Statistics, Web Development, Object-Oriented Programming, Structured &amp; Massive Unstructured Data.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Bachelor Degree (L1 &amp; L2) Economics and Management</h4>
+              <span class="timeline-date">2019 &ndash; 2021</span>
+            </div>
+            <p class="timeline-place">Toulouse School of Economics (TSE)</p>
+            <div class="honors-badge-group">
+              <span class="badge-gold">★ Valedictorian L2 (1/463) — Highest Honors (Mention Très Bien)</span>
+              <span class="badge-gold">★ Valedictorian L1 (1/765) — Highest Honors (Mention Très Bien)</span>
+            </div>
+            <p class="timeline-details">Applied Mathematics, Inferential Statistics, Microeconomics, Macroeconomics, Financial &amp; Management Accounting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scientific Activities & Service -->
+    <section id="activities" class="card">
+      <div class="section-header">
+        <h2>Scientific Activities &amp; Academic Service</h2>
+      </div>
+
+      <div class="grid-2col">
+        <div>
+          <h3 class="subsection-title">Platform Development &amp; Research Camps</h3>
+          <ul class="clean-list">
+            <li>
+              <strong>GAMA Coding Camp (Ninh Binh, Vietnam):</strong> April 2026 &amp; May 2025. Participated in the active core development of the GAMA multi-agent platform alongside the international research team.
+            </li>
+            <li>
+              <strong>eX Modelo School (Paris):</strong> Dec 2024. Exploration of numerical models, sensitivity analysis, optimization, and distributed cluster runs using OpenMole.
+            </li>
+            <li>
+              <strong>Games and AI Summer School (Toulouse):</strong> June 2025. Intersections between game theory, mathematics, and agent-based decision making.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="subsection-title">Department Leadership &amp; Representation</h3>
+          <ul class="clean-list">
+            <li>
+              <strong>Representative of PhD Candidates:</strong> Computer Science Faculty Council &amp; ICI Department, Université Toulouse Capitole (2025 &ndash; Present).
+            </li>
+            <li>
+              <strong>Seminar Co-Organizer:</strong> IRIT / Toulouse Capitole research seminars fostering exchange between internal and invited external researchers (2024 &ndash; Present).
+            </li>
+            <li>
+              <strong>HRS4R Working Group:</strong> Contributed as member of the Computer Science committee toward the European Human Resources Strategy for Researchers certification (2024).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Experience -->
+    <section id="experience" class="card">
+      <div class="section-header">
+        <h2>Professional Experience</h2>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <h4>Full-stack Developer &amp; Scrum Master</h4>
+            <p class="exp-company">Sopra Steria &bull; Apprenticeship (Alternance)</p>
+          </div>
+          <span class="exp-date">2022 &ndash; 2024</span>
+        </div>
+        <p class="exp-desc">
+          <strong>Year 2 (Telecommunications):</strong> Agile scrum facilitation, burnup tracking, full-stack development, batch processing, and user stories specification (BPMN / mockups).<br>
+          <strong>Year 1 (Banking Sector):</strong> Application maintenance, back-end/front-end features, performance audits, obsolescence migrations, and functional quotes.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <h4>Full-stack Developer Intern</h4>
+            <p class="exp-company">CEA Tech &bull; Internship</p>
+          </div>
+          <span class="exp-date">2022</span>
+        </div>
+        <p class="exp-desc">
+          Designed and developed the <strong>DONUT</strong> crisis team dashboard facilitating synchronized, real-time data visualization and decision support for the CEA national crisis response unit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="card">
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="skill-label">Languages &amp; Simulation</span>
+          <p>Python, Gaml (GAMA), Java, TypeScript, JavaScript, SQL, HTML/CSS</p>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">Frameworks &amp; Web</span>
+          <p>Spring Boot, Spring Batch, Hibernate, React, Angular, Meteor, Node.js</p>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">Data, Geospatial &amp; DB</span>
+          <p>PostgreSQL, PostGIS, MongoDB, MS SQL, GeoPandas, OSMnx, QGIS</p>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">DevOps, Testing &amp; Tools</span>
+          <p>Git, Docker, GitLab CI/CD, Maven, OpenMole, JUnit, Cucumber, LaTeX</p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; Elisa Cueille &bull; Hosted with GitHub Pages</p>
+    <footer class="footer">
+      <p>&copy; Elisa Cueille &bull; Hosted on GitHub Pages &bull; Updated 2026</p>
     </footer>
 
-  </div>
+  </main>
 
 </body>
 </html>
