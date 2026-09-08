@@ -1,43 +1,114 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elisa Cueille</title>
+  <title>Elisa CUEILLE | Academic Webpage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Elisa CUEILLE</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="CV.pdf" target="_blank" class="nav-cv-btn">CV (PDF)</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
-    <header class="profile">
-      <img src="photo.jpg" alt="Photo de profil" class="avatar">
-      <div class="intro">
-        <h1>Elisa Cueille</h1>
-        <p>Post-doctorante / Chercheuse en [Domaine]</p>
-        <p>Email : <a href="mailto:nom@domaine.fr">nom@domaine.fr</a></p>
-        <p><a href="CV.pdf" target="_blank">Télécharger mon CV (PDF)</a></p>
+    
+    <!-- Hero / About Section -->
+    <header id="about" class="hero-section">
+      <div class="hero-content">
+        <h1>Elisa CUEILLE</h1>
+        <p class="subtitle">PhD Candidate in Computer Science</p>
+        <p class="affiliation">
+          <a href="https://www.irit.fr/" target="_blank" rel="noopener">IRIT</a> (Institut de Recherche en Informatique de Toulouse) &bull; Team <a href="https://www.irit.fr/departement/systemes-sociotechniques/smac/" target="_blank" rel="noopener">SMAC</a><br>
+          <a href="https://www.ut-capitole.fr/" target="_blank" rel="noopener">Université Toulouse Capitole</a>, Toulouse, France
+        </p>
+        <div class="contact-links">
+          <a href="mailto:elisa.cueille@irit.fr" class="chip-link">📧 elisa.cueille@irit.fr</a>
+          <a href="https://github.com/S-V-R-S" target="_blank" rel="noopener" class="chip-link">💻 GitHub</a>
+          <a href="CV.pdf" target="_blank" class="chip-link primary">📄 Download CV</a>
+        </div>
       </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Recherche</h2>
-        <p>Description des thématiques de recherche, projets en cours et collaborations.</p>
-      </section>
+    <!-- Bio / Overview -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a PhD candidate in Computer Science at <strong>Université Toulouse Capitole</strong>, conducting research within the <strong>SMAC</strong> (Systèmes Multi-Agents Coopératifs) team at <strong>IRIT</strong>.
+      </p>
+      <p>
+        My doctoral research is supervised by <strong>Benoît Gaudou</strong>, <strong>Nicolas Verstaevel</strong>, and <strong>Manon Prédhumeau</strong>.
+      </p>
+    </section>
 
-      <section>
-        <h2>Publications</h2>
-        <ul>
-          <li><strong>Titre de l'article</strong>, Conférence/Journal, 2026. [<a href="#">PDF</a>]</li>
-        </ul>
-      </section>
+    <!-- Research Section -->
+    <section id="research" class="card">
+      <h2>Research</h2>
+      <p>
+        <strong>Thesis topic:</strong> <em>Generation of agent behaviors under environmental constraints: application to prospective urban development scenarios.</em>
+      </p>
+      <p>
+        Metropolises today face rapid urban growth and densification, raising critical challenges such as congestion, public transit load, air pollution, and environmental constraints. My work focuses on:
+      </p>
+      <ul>
+        <li><strong>Multi-Agent Systems &amp; Agent-Based Modeling (ABM):</strong> Simulating realistic mobility behaviors and activity generation.</li>
+        <li><strong>Synthetic Populations &amp; Activity-Based Models:</strong> Moving beyond purely historical survey data to model prospective planning scenarios and disruptive environmental events.</li>
+        <li><strong>Multimodal Urban Mobility Simulation:</strong> Designing resilient transit algorithms and behavioral adaptation paradigms in urban contexts (e.g., GAMA Platform, MATSim).</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Enseignement</h2>
-        <ul>
-          <li>Nom du cours — Niveau (L3, M1…), Université.</li>
-        </ul>
-      </section>
-    </main>
+    <!-- Publications & Communications Section -->
+    <section id="publications" class="card">
+      <h2>Publications &amp; Communications</h2>
+      
+      <h3>Conference Papers &amp; Book Chapters</h3>
+      <ul class="pub-list">
+        <li>
+          <strong>Assessing the Impact of Crisis Cell Decisions During Flash Flood</strong><br>
+          <em>Élisa Cueille, Déborah Bodini, Benoit Gaudou, Delphine Grancher, Pierre-Alexandre Méthot, et al.</em>
+        </li>
+      </ul>
+
+      <h3>Presentations &amp; Research Stays</h3>
+      <ul class="pub-list">
+        <li>
+          <strong>Moov'Hanoi Project:</strong> Visiting researcher at ACROSS Laboratory (Hanoi, Vietnam) — Multimodal mobility modeling and simulation.
+        </li>
+        <li>
+          <strong>IRIT-UT Capitole Seminars:</strong> Co-organizer of academic seminars in computer science.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="card">
+      <h2>Teaching</h2>
+      <p>
+        Teaching assistant (Vacataire / Mission d'enseignement) at <strong>Université Toulouse Capitole</strong>:
+      </p>
+      <ul>
+        <li><strong>Databases &amp; Information Systems:</strong> Practical and lab sessions (L2 Economics / MIASHS).</li>
+        <li><strong>Algorithmique &amp; Programmation:</strong> Labs and practical assignments in programming.</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Elisa Cueille &bull; Hosted with GitHub Pages</p>
+    </footer>
+
   </div>
+
 </body>
 </html>
